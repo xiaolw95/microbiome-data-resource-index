@@ -169,3 +169,19 @@
 ### 未完成和边界
 - ...
 ```
+
+## 2026-11-11 — 发布准备记录：本地首版已提交，远端待建
+
+**记录时间：** 2026-11-11 10:43:19 +08:00  
+**目标仓库：** xiaolw95/microbiome-data-resource-index（用户已确认 public、CC BY 4.0 文档/目录、MIT 后续代码、署名 xiaolw95、不启用 Pages）。
+
+### 本轮进展
+
+- 已在项目目录初始化 Git 仓库，默认分支 main；首版 118 个公开文件已提交，提交短 SHA 为 $(git rev-parse --short HEAD)。
+- 已配置 origin 为 https://github.com/xiaolw95/microbiome-data-resource-index.git。
+- DISCUSSION_LOG.md、PROJECT_BRIEF.md、SOURCE_WORKFLOW_REVIEW.md 已被 .gitignore 排除，仍留在本机工作目录；公开提交不包含这三份内部记录。
+- GitHub API 核查目标仓库仍返回 404。当前 GitHub 连接器没有创建仓库接口；浏览器自动化在访问已有窗口时因无法可靠确认 Windows 浏览器当前地址而被系统停止。因此还未创建远端，也未上传首版。
+
+### 下一步
+
+需要先在 xiaolw95 账户下创建空的 public 仓库 microbiome-data-resource-index（不初始化 README、license 或 gitignore）。创建完成后，当前 origin 与首版本地提交即可用于推送；之后核对远端文件和引用/许可，并补上 0.1.0 release/tag。第二阶段仍未开始。
