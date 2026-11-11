@@ -216,3 +216,15 @@
 ### 待办
 
 - 在用户交互式 PowerShell/终端运行带 OpenSSL 后端的 git push -u origin main，由本机 Git Credential Manager 完成登录提示；成功后核验远端文件，再创建版本标签。
+
+## 2026-11-11 — 第一阶段首版发布核验
+
+**核验时间：** 2026-11-11 12:43:46 +08:00  
+**远端：** https://github.com/xiaolw95/microbiome-data-resource-index，public，默认分支 main。
+
+### 核验结果
+
+- 用户已成功将本地 main 推送到 GitHub；本地/远端提交 SHA 为 e8cbdcb146d2477d8df2ec5e73ecad04dbce628。
+- 通过 GitHub 读取接口核对 README、CC BY 4.0 LICENSE、CITATION.cff 和 catalog/resources.csv 均存在；远端分支含 118 个文件，未发现 DISCUSSION_LOG.md、PROJECT_BRIEF.md 或 SOURCE_WORKFLOW_REVIEW.md。
+- 许可与署名按项目约定发布；无原始测序文件或大型矩阵。Pages 未启用，第二阶段尚未开始。
+- 计划将首版标记为 0.1.0；该 tag 需随当前提交推送后才会出现在 GitHub。
