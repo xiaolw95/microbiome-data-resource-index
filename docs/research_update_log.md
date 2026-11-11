@@ -185,3 +185,19 @@
 ### 下一步
 
 需要先在 xiaolw95 账户下创建空的 public 仓库 microbiome-data-resource-index（不初始化 README、license 或 gitignore）。创建完成后，当前 origin 与首版本地提交即可用于推送；之后核对远端文件和引用/许可，并补上 0.1.0 release/tag。第二阶段仍未开始。
+
+## 2026-11-11 — 远端建仓与写权限核查
+
+**记录时间：** 2026-11-11 11:07:10 +08:00  
+**目标：** https://github.com/xiaolw95/microbiome-data-resource-index。
+
+### 核查结果
+
+- 远端 public 仓库已创建，默认分支为 main，目前只有 GitHub 初始化的 README。
+- GitHub 连接器能读取仓库，但创建 Git blob 和通过 Contents API 新建文件均返回 HTTP 403（Resource not accessible by integration）；所以本轮没有文件被上传或公开。
+- 本机 Git 的远端地址已设为 origin，但 git fetch origin 因本机无 GitHub 凭据而失败。连接器需要获准访问此个人仓库，或需在本机完成 GitHub Git 凭据认证后才能继续推送。
+
+### 本地状态
+
+- 首版公开文件已在本地 main 分支提交；3 份本机内部记录仍由 .gitignore 排除。
+- 未创建远端 release/tag；未启用 Pages；第二阶段尚未开始。
