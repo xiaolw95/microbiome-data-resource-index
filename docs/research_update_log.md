@@ -201,3 +201,18 @@
 
 - 首版公开文件已在本地 main 分支提交；3 份本机内部记录仍由 .gitignore 排除。
 - 未创建远端 release/tag；未启用 Pages；第二阶段尚未开始。
+
+## 2026-11-11 — 本地 Git 推送认证排查
+
+**记录时间：** 2026-11-11 12:39:36 +08:00  
+**目标：** xiaolw95/microbiome-data-resource-index。
+
+### 本轮进展
+
+- 使用 OpenSSL TLS 后端成功 fetch 远端 main，将 GitHub 自动生成的初始提交合并到本地发布分支；保留远端提交并以项目 README 解决同名文件冲突。
+- git push 已实际尝试，但本机 GCM 没有向 Git 提供可用凭据，GitHub 返回 No anonymous write access。设备码登录遇到 TLS/网络错误；浏览器登录提示“此平台上不支持操作”。
+- 因此，远端 main 仍只有初始化 README；本地 main 包含完整 118 文件首版和远端初始化历史，可通过 HTTPS/OpenSSL 推送。
+
+### 待办
+
+- 在用户交互式 PowerShell/终端运行带 OpenSSL 后端的 git push -u origin main，由本机 Git Credential Manager 完成登录提示；成功后核验远端文件，再创建版本标签。
