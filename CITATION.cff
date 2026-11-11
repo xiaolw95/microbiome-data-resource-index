@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this resource index, please cite it as follows."
+title: "Microbiome Data Resource Index & Dataset Discovery"
+type: dataset
+version: 0.1.0
+date-released: 2026-11-11
+license: CC-BY-4.0
+authors:
+  - name: xiaolw95

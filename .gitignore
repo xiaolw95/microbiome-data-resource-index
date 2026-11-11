@@ -1,0 +1,13 @@
+# Local working notes are preserved in the workspace and excluded from public commits.
+/DISCUSSION_LOG.md
+/PROJECT_BRIEF.md
+/SOURCE_WORKFLOW_REVIEW.md
+
+# Common generated files and local environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
